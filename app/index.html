@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Secret Santa</title>
+</head>
+<body>
+    <h1>Secret Santa</h1>
+
+    <form id="participantForm">
+        <!-- Nom -->
+        <label for="participantName">Nom :</label>
+        <input type="text" id="participantName" name="participantName" required>
+
+        <!-- Prénom -->
+        <label for="participantFirstName">Prénom :</label>
+        <input type="text" id="participantFirstName" name="participantFirstName" required>
+
+        <!-- Bouton Ajouter -->
+        <button id="btnAdd" type="button">Ajouter</button>
+    </form>
+
+    <table>
+        <thead>
+        <tr>
+            <td>Nom</td>
+            <td>Prénom</td>
+        </tr>
+        </thead>
+
+        <tbody id="participantsList">
+        </tbody>
+    </table>
+
+    <button type="button" onclick="drawParticipant()">Effectuer le tirage</button>
+
+    <!-- Nouvelle div pour afficher les résultats -->
+    <div id="tirageauSort"></div>
+
+
+    <script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+</html>
